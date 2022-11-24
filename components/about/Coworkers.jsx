@@ -1,13 +1,9 @@
-export default function AboutCoWorkers() {
+export default function AboutCoWorkers({data}) {
     return (
         <div className="about-coworkers section">
             <div className="container">
-                <h2>Գործընկերներ</h2>
-                <p>
-                    Աշխատանքների համար ընկերությունը կիրառում է ամբողջ աշխարհում արտադրվող լավագույն նյութերը` բաց չթողնելով ոլորտի արժեքավոր նորարարությունները:
-                </p>
-                <p>Մեզ հետ դուք կարող եք վստահ լինել որ ետ չեք մնում ոլորտային նոր զարգացոււմներից, նորագույն տեխնոլոգիաներից ու լուծումներից։</p>
-                <p>ԳԻԶԱ-ն աշխատում է շուրջ 40 երկրների մատակարարների հետ։</p>
+                <h2>{data.acf.partners_title}</h2>
+                <p>{data.acf.partners_text}</p>
             </div>
         </div>
     )

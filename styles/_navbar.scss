@@ -8,12 +8,16 @@ nav {
         border-bottom: 1px solid #ddd;
         padding-bottom: 7px;
         margin-bottom: 7px;
-
+        @media(max-width: 768px) {
+            justify-content: center;
+        }
         ul {
             li {
                 a {
                     display: flex;
                     align-items: center;
+                    @media(max-width: 991px) {
+                    }
 
                     span {
                         padding-left: 5px;
@@ -27,12 +31,20 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        ul {
+            @media(max-width: 768px) {
+                display: none;
+            }
+        }
     }
 
     .logo {
         img {
             width: 80px !important;
             border-radius: 50%;
+            @media(max-width: 991px) {
+                width: 55px !important;
+            }
         }
     }
 
@@ -52,11 +64,85 @@ nav {
                 color: black;
                 font-weight: 600;
                 font-family: inherit;
+                @media(max-width: 991px) {
+                    font-size: 12px !important;
+                }
 
                 &:hover {
                     color: #9d2927;
                 }
             }
         }
+    }
+}
+
+.mobile-burger {
+    width: 30px;
+    height: 2px;
+    background: black;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+    @media(max-width: 768px) {
+        display: block;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: black;
+        border-radius: 10px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: black;
+        border-radius: 10px;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background: white;
+    width: 80%;
+    padding: 40px;
+    transition: 250ms ease-in-out;
+    z-index: 999;
+    &.active {
+        right: 0;
+    }
+    ul {
+        display: block;
+      li {
+          padding: 10px;
+          a {
+              font-size: 20px !important;
+          }
+      }
+    }
+}
+
+.overlay {
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background: #000000b5;
+    top: 0;
+    display: none;
+    &.active {
+        display: block;
     }
 }

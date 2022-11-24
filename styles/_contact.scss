@@ -1,4 +1,17 @@
 .contact {
+    .row {
+        .col-md-6:nth-child(2) {
+            @media(max-width: 768px) {
+                display: none;
+            }
+        }
+        .col-md-6:nth-child(1) {
+            @media(max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     h1 {
         font-family: sans-serif;
         font-weight: bold;

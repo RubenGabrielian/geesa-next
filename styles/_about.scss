@@ -54,6 +54,9 @@
             margin-bottom: 25px;
             &.small {
                 width: 75%;
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
             }
         }
     }
@@ -64,14 +67,24 @@
         font-size: 38px;
         padding-bottom: 50px;
         text-align: center;
+        @media(max-width: 570px) {
+            font-size: 32px;
+        }
     }
     p {
         margin: 0;
         font-size: 18px;
         padding-bottom: 5px;
+        @media(max-width: 768px) {
+            text-align: center;
+
+        }
     }
     img {
         border-radius: 1rem;
+        @media(max-width: 768px) {
+            margin: 15px 0;
+        }
     }
 }
 .team-item {

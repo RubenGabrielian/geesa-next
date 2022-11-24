@@ -20,6 +20,13 @@
         max-width: 56%;
         text-align: center;
         margin-bottom: 51px;
+        @media(max-width: 991px) {
+            max-width: 100%;
+        }
+        @media(max-width: 768px) {
+            max-width: 85%;
+            font-size: 33px;
+        }
     }
 
     p {
@@ -27,6 +34,9 @@
         font-size: 16px;
         color: #ddd;
         text-align: center;
+        @media(max-width: 991px) {
+            max-width: 80%;
+        }
     }
 }
 
@@ -39,6 +49,9 @@
         font-size: 54px;
         font-family: inherit;
         font-weight: bold;
+        @media(max-width: 768px)  {
+            font-size: 30px;
+        }
     }
 
     p {
@@ -49,6 +62,9 @@
         font-size: 18px;
         color: #505050;
         font-weight: 400;
+        @media(max-width: 768px) {
+            font-size: 16px;
+        }
     }
 
     &-advs {
@@ -60,6 +76,12 @@
             padding-top: 55px;
             font-family: inherit;
             font-weight: bold;
+            @media(max-width: 768px) {
+                text-align: center;
+            }
+            @media(max-width: 500px) {
+                font-size: 27px;
+            }
         }
 
         small {
@@ -68,6 +90,9 @@
             font-family: inherit;
             font-size: 19px;
             margin-bottom: 25px;
+            @media(max-width: 768px) {
+                text-align: center;
+            }
         }
 
         .adv-item {
@@ -113,7 +138,7 @@ a {
 .home-services {
     padding: 100px 0;
 
-    
+
     h2 {
         text-align: center;
         padding-bottom: 15px;
@@ -121,6 +146,9 @@ a {
         font-family: inherit;
         font-weight: bold;
         padding-bottom: 30px;
+        @media(max-width: 768px) {
+            font-size: 40px;
+        }
     }
 
 
@@ -152,10 +180,13 @@ a {
     h2 {
         text-align: center;
         padding-bottom: 15px;
-        font-size: 54px;
+        font-size: 34px;
         font-family: inherit;
         font-weight: bold;
-        padding-bottom: 70px; 
+        padding-bottom: 70px;
+        @media(max-width: 76px) {
+            font-size: 42px !important;
+        }
     }
     &-item {
         box-shadow: 0 0.125rem 0.125rem -0.125rem rgb(31 27 45 / 8%), 0 0.25rem 0.75rem rgb(31 27 45 / 8%) !important;
@@ -181,5 +212,18 @@ a {
         display: flex;
         justify-content: center;
         margin-top: 35px;
+    }
+}
+
+footer {
+    @media(max-width: 768px)  {
+        p {
+            text-align: center;
+        }
+    }
+    .justify-content-end {
+       @media(max-width: 768px) {
+           justify-content: center !important;
+       }
     }
 }

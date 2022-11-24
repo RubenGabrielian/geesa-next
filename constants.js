@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost/geesa/wp-json/wp/v2";
+export const API_URL = "https://manage.geesa.am/wp-json/wp/v2";
