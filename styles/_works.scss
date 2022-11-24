@@ -1,0 +1,13 @@
+.works, .services-page {
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-bottom: 15px;
+        & + p {
+            text-align: center;
+            font-family: sans-serif;
+            padding-bottom: 50px;
+        }
+    }
+}

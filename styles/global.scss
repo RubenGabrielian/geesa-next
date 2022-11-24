@@ -1,0 +1,22 @@
+@import "./navbar";
+@import "./home";
+@import "./about";
+@import "./works";
+@import "./services";
+@import "./partners";
+@import "./contact";
+
+
+.geesa-btn {
+    background: #9d2927;
+    color: white;
+    border: 1px solid #9d2927;
+    padding: 15px 40px;
+    border-radius: 3rem;
+    font-weight: bold;
+    transition: 200ms;
+    &:hover {
+        background: transparent;
+        color: #9d2927;
+    }
+}
